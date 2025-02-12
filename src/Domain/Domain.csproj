@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="..\..\Build\Common.props"/>
+  <PropertyGroup>
+    <RootNamespace>SecurityApi.Domain</RootNamespace>
+    <AssemblyName>SecurityApi.Domain</AssemblyName>
+    <Version>8.3.1</Version>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <NoWarn>$(NoWarn);1591</NoWarn>
+  </PropertyGroup>
+</Project>

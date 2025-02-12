@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="..\..\packages.props"/>
+  <ItemGroup>
+    <PackageReference Include="Andreani.Arq.Orleans.Abstractions" Version="8.5.3"/>
+  </ItemGroup>
+  <PropertyGroup>
+    <Version>8.3.1</Version>
+  </PropertyGroup>
+</Project>

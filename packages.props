@@ -1,0 +1,11 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<Import Project=".\Build\Common.props" />
+	<PropertyGroup>
+        <Authors>Andreani Architecture it</Authors>
+        <Company>Andreani</Company>
+		<Version>1.0.0</Version>
+        <IsPackable>true</IsPackable>
+        <!--<PackageProjectUrl>{repository url}</PackageProjectUrl>
+        <RepositoryUrl>{repository url}</RepositoryUrl>-->
+	</PropertyGroup>
+</Project>

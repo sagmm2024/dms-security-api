@@ -1,0 +1,18 @@
+Orleans:
+    Cluster:
+        ClusterId: Orleans
+        ServiceId: Example
+    Storage:
+        Invariant: System.Data.SqlClient
+        ConnectionString: "Data Source=DBOrleansDESA;Initial Catalog=Orleans;Persist Security Info=True;User ID=User_Orleans;Password=sK0JCLwjvywWJawjmjJb"
+    ClusteringStore:
+        Invariant: System.Data.SqlClient
+        ConnectionString: "Data Source=DBOrleansDESA;Initial Catalog=Orleans;Persist Security Info=True;User ID=User_Orleans;Password=sK0JCLwjvywWJawjmjJb"
+    ReminerServices:
+        Invariant: System.Data.SqlClient
+        ConnectionString: "Data Source=DBOrleansDESA;Initial Catalog=Orleans;Persist Security Info=True;User ID=User_Orleans;Password=sK0JCLwjvywWJawjmjJb"
+
+Cors: 
+  Origins: 
+  - "localhost:3000"
+  - "andreani.com.ar"

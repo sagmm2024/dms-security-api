@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="..\..\Build\Common.props"/>
+  <PropertyGroup>
+    <RootNamespace>SecurityApi.Application</RootNamespace>
+    <AssemblyName>SecurityApi.Application</AssemblyName>
+    <Version>8.3.1</Version>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <NoWarn>$(NoWarn);1591</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Andreani.ARQ.Core" Version="8.5.3"/>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1"/>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\grains\OrleansClient.Grain.Interface\SecurityApi.Grain.Interface.csproj"/>
+    <ProjectReference Include="..\Domain\Domain.csproj"/>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="UseCase\V2\"/>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,12 @@
+Orleans:
+    Cluster:
+        ClusterId: Orleans
+        ServiceId: Example
+    ClusteringStore:
+        ConnectionString: Data Source=DBOrleansDESA;Initial Catalog=Orleans;Persist Security Info=True;User ID=User_Orleans;Password=sK0JCLwjvywWJawjmjJb
+        Invariant: System.Data.SqlClient
+
+Cors: 
+  Origins: 
+  - "localhost:3000"
+  - "andreani.com.ar"

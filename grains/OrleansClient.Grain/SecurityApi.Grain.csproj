@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="..\..\packages.props"/>
+  <ItemGroup>
+    <PackageReference Include="Andreani.Arq.Orleans.Core" Version="8.5.3"/>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\OrleansClient.Grain.Interface\SecurityApi.Grain.Interface.csproj"/>
+  </ItemGroup>
+  <PropertyGroup>
+    <Version>8.3.1</Version>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <Import Project="..\..\Build\Common.props"/>
+  <ItemGroup>
+    <None Remove="appsettings.Development.yml"/>
+    <None Remove="appsettings.yml"/>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="appsettings.Development.yml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="appsettings.yml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Andreani.Arq.Observability.ElasticApm" Version="8.5.3"/>
+    <PackageReference Include="Andreani.Arq.Orleans.Server" Version="8.5.3"/>
+    <PackageReference Include="Andreani.ARQ.WebHost" Version="8.5.3"/>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\grains\OrleansClient.Grain\SecurityApi.Grain.csproj"/>
+  </ItemGroup>
+  <PropertyGroup>
+    <Version>8.3.1</Version>
+  </PropertyGroup>
+</Project>
